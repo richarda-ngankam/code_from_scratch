@@ -10,7 +10,3 @@ function afficher(id, lien) {
         lien.textContent = "Reduire";
     }
 }
-
-// la date du jour dans le footer
-var aujourdhui = new Date();
-document.getElementById("date").innerHTML = "Date : " + aujourdhui.toLocaleDateString();
