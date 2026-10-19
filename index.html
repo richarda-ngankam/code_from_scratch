@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Cameroun</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Le Cameroun</h1>
+        <p>Quelques problemes de mon pays</p>
+    </header>
+
+    <div class="menu">
+        <a href="#education">Education</a>
+        <a href="#pauvrete">Pauvrete</a>
+        <a href="#pollution">Pollution</a>
+    </div>
+
+    <section id="education">
+        <div class="texte">
+            <h2>L'education</h2>
+            <p>
+                Au Cameroun beaucoup d'enfants vont a l'ecole, mais ce n'est pas toujours facile.
+                Dans certaines ecoles il y a plus de 80 eleves dans une seule classe et il n'y a pas
+                assez de tables. Les parents doivent aussi payer les fournitures, l'uniforme et
+                parfois les cours de renforcement.
+            </p>
+            <!-- ce paragraphe est cache, le lien l'affiche -->
+            <p id="plus1" class="cache">
+                Dans les villages c'est encore plus dur parce que l'ecole est parfois loin et il
+                manque des enseignants. Certains eleves marchent plus d'une heure pour y aller.
+            </p>
+            <span class="lire" onclick="afficher('plus1', this)">Lire la suite...</span>
+        </div>
+        <img src="images/images 1.jpg" alt="education">
+    </section>
+
+    <section id="pauvrete">
+        <div class="texte">
+            <h2>La pauvrete</h2>
+            <p>
+                Beaucoup de familles vivent avec tres peu d'argent. Quand le papa ou la maman n'a
+                pas de travail stable, c'est difficile de payer la nourriture, le loyer et l'ecole
+                des enfants. Il y a des jeunes qui ont un diplome mais qui n'arrivent pas a trouver
+                du travail, alors ils font des petits boulots.
+            </p>
+            <p id="plus2" class="cache">
+                Le cout de la vie augmente aussi. Le prix du riz, de l'huile et du transport monte
+                souvent, mais les salaires ne changent presque pas.
+            </p>
+            <span class="lire" onclick="afficher('plus2', this)">Lire la suite...</span>
+        </div>
+        <img src="images/images 2.jpg" alt="pauvrete">
+    </section>
+
+    <section id="pollution">
+        <div class="texte">
+            <h2>La pollution</h2>
+            <p>
+                Dans les grandes villes comme Douala, on voit beaucoup de dechets dans les rues et
+                dans les caniveaux. Quand il pleut, l'eau ne passe pas et ca fait des inondations.
+                Il y a aussi la fumee des vieilles voitures et des motos qui rend l'air pas tres
+                bon a respirer.
+            </p>
+            <p id="plus3" class="cache">
+                Les sachets plastiques sont partout. Si chacun jetait ses ordures a la poubelle et
+                si on triait un peu, la ville serait plus propre.
+            </p>
+            <span class="lire" onclick="afficher('plus3', this)">Lire la suite...</span>
+        </div>
+        <img src="images/images 3.jpg" alt="pollution">
+    </section>
+
+    <footer>
+        <!-- la date est ecrite ici avec le js -->
+        <p id="date"></p>
+        <p>© Lindsay 2026</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
